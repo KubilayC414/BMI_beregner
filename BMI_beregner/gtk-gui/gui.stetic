@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+  </configuration>
+  <import>
+    <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <widget-library name="../bin/Debug/BMI_beregner.exe" internal="true" />
+  </import>
+  <widget class="Gtk.Window" id="MainWindow" design-size="537 300">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">MainWindow</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <child>
+      <widget class="Gtk.Fixed" id="fixed3">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.Label" id="text_hoejde">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Din højde</property>
+          </widget>
+          <packing>
+            <property name="X">150</property>
+            <property name="Y">57</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="textBox_hoejde">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">●</property>
+          </widget>
+          <packing>
+            <property name="X">206</property>
+            <property name="Y">52</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="text_vaegt">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Din vægt</property>
+          </widget>
+          <packing>
+            <property name="X">152</property>
+            <property name="Y">115</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="textBox_vaegt">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">●</property>
+          </widget>
+          <packing>
+            <property name="X">206</property>
+            <property name="Y">110</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label6">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">cm</property>
+          </widget>
+          <packing>
+            <property name="X">370</property>
+            <property name="Y">57</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label7">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">kg</property>
+          </widget>
+          <packing>
+            <property name="X">371</property>
+            <property name="Y">114</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="text_bmi">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Din BMI</property>
+          </widget>
+          <packing>
+            <property name="X">158</property>
+            <property name="Y">215</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="textBox_bmi">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">●</property>
+          </widget>
+          <packing>
+            <property name="X">207</property>
+            <property name="Y">210</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button_beregn">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Beregn BMI</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="on_clicked" after="yes" />
+          </widget>
+          <packing>
+            <property name="X">248</property>
+            <property name="Y">156</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>
